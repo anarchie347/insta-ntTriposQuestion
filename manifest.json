@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "insta-ntTriposQuestion",
+  "version": "1.1",
+  "description": "No more insta for you",
+  "permissions": ["webNavigation", "tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "host_permissions": ["https://www.cl.cam.ac.uk/*"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "insta@nttriposquestion.example.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "action": { "default_icon": "icon.png" }
+}
